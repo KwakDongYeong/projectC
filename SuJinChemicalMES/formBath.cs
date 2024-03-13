@@ -32,7 +32,7 @@ namespace SuJinChemicalMES
         {
             try
             {
-                string connectionInspection = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                string connectionInspection = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                 using (MySqlConnection connection2 = new MySqlConnection(connectionInspection))
                 {
                     connection2.Open();

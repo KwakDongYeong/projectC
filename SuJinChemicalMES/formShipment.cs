@@ -31,7 +31,7 @@ namespace SuJinChemicalMES
 
       private void ShowGridView1()
       {
-            string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -55,7 +55,7 @@ namespace SuJinChemicalMES
       }
         private void ShowSHdatagridview()
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -146,8 +146,8 @@ namespace SuJinChemicalMES
 
         private void ImportBt_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=10.10.32.82;Database=quality;User Id=team;Password=team1234;";
-            string connectionString1 = "Server=10.10.32.82;Database=production_management;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=quality;User Id=MES;Password=mes1234;";
+            string connectionString1 = "Server=127.0.0.1;Database=production_management;User Id=MES;Password=mes1234;";
             string defectCause = (defectivequantity.Text != "0") ? DefectcauseCb.SelectedItem?.ToString() : "";
 
             if ( defectivequantity.Text == "" || standardproduct.Text == "")
@@ -258,7 +258,7 @@ namespace SuJinChemicalMES
                                 insertCommand.ExecuteNonQuery();
                             }
                         }
-                        string connectionString2 = "Server=10.10.32.82;Database=accumulated_data;Uid=team;Pwd=team1234;";
+                        string connectionString2 = "Server=127.0.0.1;Database=accumulated_data;Uid=MES;Pwd=mes1234;";
                         using (MySqlConnection connection = new MySqlConnection(connectionString2))
                         {
                             connection.Open();
@@ -323,7 +323,7 @@ namespace SuJinChemicalMES
                                 insertCommand.ExecuteNonQuery();
                             }
                         }
-                        string connectionString2 = "Server=10.10.32.82;Database=accumulated_data;Uid=team;Pwd=team1234;";
+                        string connectionString2 = "Server=127.0.0.1;Database=accumulated_data;Uid=MES;Pwd=mes1234;";
                         using (MySqlConnection connection = new MySqlConnection(connectionString2))
                         {
                             connection.Open();
@@ -368,7 +368,7 @@ namespace SuJinChemicalMES
 
             private void Search_Bt_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=10.10.32.82;Database=quality;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=quality;User Id=MES;Password=mes1234;";
             if (string.IsNullOrEmpty(product_nametb.Text) &&
                 string.IsNullOrEmpty(product_codetb.Text) &&
                 string.IsNullOrEmpty(CompanyCb.Text) &&
@@ -464,7 +464,7 @@ namespace SuJinChemicalMES
         }
         private void LoadCompanies()
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
@@ -493,7 +493,7 @@ namespace SuJinChemicalMES
         }
         private void CompanyCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             if (CompanyCb.SelectedItem != null)
             {
                 string selectedCompanyName = CompanyCb.SelectedItem.ToString();

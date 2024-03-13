@@ -70,9 +70,9 @@ namespace SuJinChemicalMES
 
             if (!string.IsNullOrEmpty(selectedOrderNumber))
             {
-                string connectionString = "Server=10.10.32.82;Database=quality;User Id=team;Password=team1234;";
-                string connectionString1 = "Server=10.10.32.82;Database=managerproduct;User Id=team;Password=team1234;";
-                string connectionString2 = "Server=10.10.32.82;Database=accumulated_data;Uid=team;Pwd=team1234;";
+                string connectionString = "Server=127.0.0.1;Database=quality;User Id=MES;Password=mes1234;";
+                string connectionString1 = "Server=127.0.0.1;Database=managerproduct;User Id=MES;Password=mes1234;";
+                string connectionString2 = "Server=127.0.0.1;Database=accumulated_data;Uid=MES;Pwd=mes1234;";
                 DialogResult result = MessageBox.Show("등록하시겠습니까?", "등록 확인", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
@@ -163,7 +163,7 @@ namespace SuJinChemicalMES
 
         private void Search_Bt_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=10.10.32.82;Database=quality;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=quality;User Id=MES;Password=mes1234;";
             if (string.IsNullOrEmpty(product_nametb.Text) &&
                 string.IsNullOrEmpty(product_codetb.Text) &&
                 string.IsNullOrEmpty(CompanyCb.Text) &&
@@ -271,7 +271,7 @@ namespace SuJinChemicalMES
 
         private void LoadDataIntoDataGridView()
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -297,7 +297,7 @@ namespace SuJinChemicalMES
         private void LoadSmallDataGridView()
         {
           
-            string connectionString1 = "Server = 10.10.32.82; Database = managerproduct; User Id = team; Password = team1234";
+            string connectionString1 = "Server = 127.0.0.1; Database = managerproduct; User Id = MES; Password = mes1234";
             using (MySqlConnection connection = new MySqlConnection(connectionString1))
             {
                 try
@@ -329,7 +329,7 @@ namespace SuJinChemicalMES
 
         private void LoadCompanies()
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
@@ -359,7 +359,7 @@ namespace SuJinChemicalMES
 
         private void CompanyCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connectionString = "Server = 10.10.32.82;Database=quality;User Id = team; Password = team1234;";
+            string connectionString = "Server = 127.0.0.1;Database=quality;User Id = MES; Password = mes1234;";
             if (CompanyCb.SelectedItem != null)
             {
                 string selectedCompanyName = CompanyCb.SelectedItem.ToString();

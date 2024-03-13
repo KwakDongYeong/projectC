@@ -39,7 +39,7 @@ namespace SuJinChemicalMES
 
 
             // MySQL 연결 문자열 설정
-            string connectionString = "Server=10.10.32.82;Database=managerproduct;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=managerproduct;User Id=MES;Password=mes1234;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -178,7 +178,7 @@ namespace SuJinChemicalMES
         private void UpdateMySQLDatabase()
         {
             // MySQL 연결 문자열 설정
-            string connectionString = "Server=10.10.32.82;Database=managerproduct;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=managerproduct;User Id=MES;Password=mes1234;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -246,7 +246,7 @@ namespace SuJinChemicalMES
         }
         private void LoadDataFromMySQL()
         {
-            string connectionString = "Server=10.10.32.82;Database=managerproduct;User Id=team;Password=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=managerproduct;User Id=MES;Password=mes1234;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {

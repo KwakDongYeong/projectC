@@ -14,7 +14,7 @@ namespace SuJinChemicalMES
     public partial class formWork : Form
     {
 
-        private string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+        private string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
         private Timer timer;
         private formBath bath;
 

@@ -858,7 +858,7 @@ namespace SuJinChemicalMES
             {
                 try
                 {
-                    MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; Uid = team; Pwd = team1234");
+                    MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; Uid = MES; Pwd = mes1234");
 
                     con.Open();
 

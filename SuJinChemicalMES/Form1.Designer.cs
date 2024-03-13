@@ -199,7 +199,7 @@ namespace SuJinChemicalMES
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "TEAM4 | SEOJIN CHAMICAL | MES";
+            this.label1.Text = "MES4 | SEOJIN CHAMICAL | MES";
             // 
             // btnham
             // 

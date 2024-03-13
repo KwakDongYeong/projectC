@@ -29,7 +29,7 @@ namespace SuJinChemicalMES
         //사용자 등록 - 중복체크
         private void ID_Check()
         {
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             string CompQuery_Id = "SELECT COUNT(*) as cnt FROM user_registration WHERE id = @ID";
@@ -92,7 +92,7 @@ namespace SuJinChemicalMES
                         string department = UserDepartment_tb.Text;
                         string user_rank = UserRank_tb.Text;
 
-                        MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+                        MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
                         con.Open();
 
                         string insertQuery = "INSERT INTO user_registration (name, id, password, department, user_rank) VALUES (\'" + name + "\',\'" + id + "\',\'" + password + "\',\'" + department + "\',\'" + user_rank + "\')";
@@ -133,7 +133,7 @@ namespace SuJinChemicalMES
         private void DisplayUserData()
         {
             //데이터그리드뷰 출력
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             string DisplayQuery = "SELECT * FROM user_registration ORDER BY department";

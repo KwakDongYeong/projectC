@@ -25,7 +25,7 @@ namespace SuJinChemicalMES
         }
         private void LoadDataFromMySQL()
         {
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             string SelectQuery = "SELECT * FROM user_registration WHERE 1 = 1";
@@ -93,7 +93,7 @@ namespace SuJinChemicalMES
 
         private void UserCheck_bt_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             string SelectQuery = "SELECT * FROM user_registration WHERE 1 = 1";
@@ -181,7 +181,7 @@ namespace SuJinChemicalMES
 
         private void UpdateUserManagement()
         {
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             foreach (DataGridViewRow row in UserList_dgv.Rows)
@@ -220,7 +220,7 @@ namespace SuJinChemicalMES
 
         private void UserDelet_bt_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = managerproduct; User id = team; Password = team1234");
+            MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = managerproduct; User id = MES; Password = mes1234");
             con.Open();
 
             for (int k = UserList_dgv.Rows.Count - 1; k >= 0; k--)

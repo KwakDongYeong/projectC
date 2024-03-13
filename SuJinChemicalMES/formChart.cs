@@ -106,7 +106,7 @@ namespace SuJinChemicalMES
 
         private void ShowProgressGraph()
         {
-            string connectionString1 = "Server = 10.10.32.82; Database=accumulated_data;Uid=team;Pwd=team1234";
+            string connectionString1 = "Server = 127.0.0.1; Database=accumulated_data;Uid=MES;Pwd=mes1234";
             var 부품수량 = Get부품수량(connectionString1);
             Dictionary<string, int> 출고부품수량 = 부품수량.ToDictionary(kv => kv.Key, kv => kv.Value.ShipmentQuantity);
             Dictionary<string, int> 입고부품수량 = 부품수량.ToDictionary(kv => kv.Key, kv => kv.Value.IncomingQuantity);
@@ -294,7 +294,7 @@ namespace SuJinChemicalMES
 
         private void ShowLoadingRateGraph() //적재, incoming테이블과 shipment 테이블의 location 데이터 숫자 합산하면 됨.
         {
-            string connectionString2 = "Server = 10.10.32.82; Database=material;Uid=team;Pwd=team1234;";
+            string connectionString2 = "Server = 127.0.0.1; Database=material;Uid=MES;Pwd=mes1234;";
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString2))
@@ -440,7 +440,7 @@ namespace SuJinChemicalMES
         }
         private void ShowDefectText()
         {
-            string connectionString = "Server = 10.10.32.82; Database=accumulated_data;Uid=team;Pwd=team1234;";
+            string connectionString = "Server = 127.0.0.1; Database=accumulated_data;Uid=MES;Pwd=mes1234;";
             Dictionary<string, int> defectCounts = new Dictionary<string, int>();
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -506,7 +506,7 @@ namespace SuJinChemicalMES
             //   chart.Series["DefectRate"].Points.Clear();
            DefectChart.Series.Clear();
             DefectChart.Legends.Clear();
-            string connectionString = "Server = 10.10.32.82; Database=accumulated_data;Uid=team;Pwd=team1234;";
+            string connectionString = "Server = 127.0.0.1; Database=accumulated_data;Uid=MES;Pwd=mes1234;";
             List<string> highDefectCompanies = new List<string>();
 
             Chart chart = new Chart();

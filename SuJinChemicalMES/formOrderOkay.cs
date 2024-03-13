@@ -33,8 +33,8 @@ namespace SuJinChemicalMES
         private void button6_Click(object sender, EventArgs e)
         {
             // MySQL 연결 문자열
-            string accumulatedDataConnectionString = "Server=10.10.32.82;Database=accumulated_data;User Id=team;Password=team1234;";
-            string managerProductConnectionString = "Server=10.10.32.82;Database=managerproduct;User Id=team;Password=team1234;";
+            string accumulatedDataConnectionString = "Server=127.0.0.1;Database=accumulated_data;User Id=MES;Password=mes1234;";
+            string managerProductConnectionString = "Server=127.0.0.1;Database=managerproduct;User Id=MES;Password=mes1234;";
 
             try
             {

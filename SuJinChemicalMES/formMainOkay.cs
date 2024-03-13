@@ -68,7 +68,7 @@ namespace SuJinChemicalMES
         {
             try
             {
-                MySqlConnection con = new MySqlConnection("Server = 10.10.32.82; Database = accumulated_data; User id = team; Password = team1234");
+                MySqlConnection con = new MySqlConnection("Server = 127.0.0.1; Database = accumulated_data; User id = MES; Password = mes1234");
                 //SQL 서버와 연결, database=스키마 이름
                 con.Open();
                 //SQL 서버 연결

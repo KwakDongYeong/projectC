@@ -14,7 +14,7 @@ namespace SuJinChemicalMES
 {
     public partial class formInventory : Form
     {
-        //private string connectionString = "Server=10.10.32.82;Database=material;Uid=team;Pwd=team1234;";
+        //private string connectionString = "Server=127.0.0.1;Database=material;Uid=MES;Pwd=mes1234;";
         private DataContainer dataContainer;
 
         public formInventory(DataContainer dataContainer)
@@ -29,7 +29,7 @@ namespace SuJinChemicalMES
             dataGridView2.Rows.Clear();
 
             // 첫 번째 MySQL 연결
-            string connectionIncoming = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionIncoming = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             using (MySqlConnection connection1 = new MySqlConnection(connectionIncoming))
             {
                 connection1.Open();
@@ -47,7 +47,7 @@ namespace SuJinChemicalMES
             }
 
             // 두 번째 MySQL 연결
-            string connectionInspection = "Server=10.10.32.82;Database=material;Uid=team;Pwd=team1234;";
+            string connectionInspection = "Server=127.0.0.1;Database=material;Uid=MES;Pwd=mes1234;";
             using (MySqlConnection connection2 = new MySqlConnection(connectionInspection))
             {
                 connection2.Open();
@@ -121,7 +121,7 @@ namespace SuJinChemicalMES
 
         private void MinusMedicine(string name, string quantityToMinus)
         {
-            string connectionString = "Server=10.10.32.82;Database=material;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=material;Uid=MES;Pwd=mes1234;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -152,7 +152,7 @@ namespace SuJinChemicalMES
                     }
                 }
             }
-            string connectionString1 = "Server=10.10.32.82;Database=material;Uid=team;Pwd=team1234;";
+            string connectionString1 = "Server=127.0.0.1;Database=material;Uid=MES;Pwd=mes1234;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString1))
             {
@@ -213,7 +213,7 @@ namespace SuJinChemicalMES
         // InsertData 함수 정의
         private void InsertData(string bath, string medicine, string num, string acidity, string progress, string registrant, string date)
         {
-            string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();

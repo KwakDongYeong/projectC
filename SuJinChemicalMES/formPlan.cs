@@ -85,7 +85,7 @@ namespace SuJinChemicalMES
         private void BindDataGridView()
         {
             dataGridView2.Rows.Clear();
-            string connectionString = "Server=10.10.32.82;Database=managerproduct;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=managerproduct;Uid=MES;Pwd=mes1234;";
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -255,7 +255,7 @@ namespace SuJinChemicalMES
 
                 timer.Start();
 
-                string connectionString = "Server=10.10.32.82;Database=managerproduct;Uid=team;Pwd=team1234;";
+                string connectionString = "Server=127.0.0.1;Database=managerproduct;Uid=MES;Pwd=mes1234;";
                 // 콤보박스에서 선택한 값을 가져오기
                 string selectedValue = label17.Text.ToString();
 
@@ -294,7 +294,7 @@ namespace SuJinChemicalMES
                 }
 
 
-                string connectionString1 = "Server=10.10.32.82;Database=managerproduct;Uid=team;Pwd=team1234;";
+                string connectionString1 = "Server=127.0.0.1;Database=managerproduct;Uid=MES;Pwd=mes1234;";
                 // 콤보박스에서 선택한 값을 가져오기
                 //string selectedValue = label17.Text.ToString();
 
@@ -358,7 +358,7 @@ namespace SuJinChemicalMES
         {
             try
             {
-                string cnn = "Server=10.10.32.82;Database=material;Uid=team;Pwd=team1234;";
+                string cnn = "Server=127.0.0.1;Database=material;Uid=MES;Pwd=mes1234;";
                 using (MySqlConnection connection = new MySqlConnection(cnn))
                 {
                     // SQL 서버와 연결, database=스키마 이름
@@ -387,7 +387,7 @@ namespace SuJinChemicalMES
         {
             try
             {
-                string cnn = "Server=10.10.32.82;Database=managerproduct;Uid=team;Pwd=team1234;";
+                string cnn = "Server=127.0.0.1;Database=managerproduct;Uid=MES;Pwd=mes1234;";
                 using (MySqlConnection connection = new MySqlConnection(cnn))
                 {
                     // SQL 서버와 연결, database=스키마 이름
@@ -417,7 +417,7 @@ namespace SuJinChemicalMES
 
         private void Insert(string order_num, string lot, string code, string name, string bath, string quantity, string real_quantity, string time, string date, string registant)
         {
-            string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -550,7 +550,7 @@ namespace SuJinChemicalMES
                     timer2.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -562,7 +562,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -631,7 +631,7 @@ namespace SuJinChemicalMES
                     timer4.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -643,7 +643,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -712,7 +712,7 @@ namespace SuJinChemicalMES
                     timer6.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -724,7 +724,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -793,7 +793,7 @@ namespace SuJinChemicalMES
                     timer8.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -805,7 +805,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -874,7 +874,7 @@ namespace SuJinChemicalMES
                     timer10.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -886,7 +886,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -955,7 +955,7 @@ namespace SuJinChemicalMES
                     timer12.Stop();
                     aaa();
                     // MySQL 데이터베이스에서 해당 행 삭제
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -967,7 +967,7 @@ namespace SuJinChemicalMES
                             command.ExecuteNonQuery();
                         }
                     }
-                    string connectionString1 = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString1 = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection1 = new MySqlConnection(connectionString1))
                     {
                         connection1.Open();
@@ -987,7 +987,7 @@ namespace SuJinChemicalMES
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             // 콤보박스에서 선택한 값을 가져오기
             string selectedValue = comboBox1.SelectedItem.ToString();
 
@@ -1030,7 +1030,7 @@ namespace SuJinChemicalMES
             // MySQL 데이터베이스 연결 및 쿼리 수행
             comboBox1.Items.Clear();
 
-            string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+            string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
             string query = "SELECT DISTINCT bath_num FROM bath";    //DISTINCT 중복을 방지시킴
 
             try
@@ -1099,7 +1099,7 @@ namespace SuJinChemicalMES
                     string dueDate2 = row.Cells["Column21"].Value.ToString();
 
                     // MySQL 데이터베이스에 데이터 추가
-                    string connectionString = "Server=10.10.32.82;Database=production_management;Uid=team;Pwd=team1234;";
+                    string connectionString = "Server=127.0.0.1;Database=production_management;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
@@ -1115,7 +1115,7 @@ namespace SuJinChemicalMES
                     }
                     dataGridView1.Rows.Remove(row);
 
-                    string connectionString2 = "Server=10.10.32.82;Database=accumulated_data;Uid=team;Pwd=team1234;";
+                    string connectionString2 = "Server=127.0.0.1;Database=accumulated_data;Uid=MES;Pwd=mes1234;";
                     using (MySqlConnection connection2 = new MySqlConnection(connectionString2))
                     {
                         connection2.Open();
